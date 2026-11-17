@@ -7,3 +7,6 @@ v0.2
 - animated images ( reactbits)
 - new images
 -text on animated images
+
+v0.3
+- placeholder
