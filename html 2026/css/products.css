@@ -1,0 +1,74 @@
+/* =====================================================================
+   PRODUCTS PAGE (products.html)
+   ===================================================================== */
+
+.section-heading {
+  text-align: center;
+}
+
+.products-table {
+  width: 85%;
+}
+
+/* Image column */
+.product-image-cell {
+  width: 35%;
+  text-align: center;
+}
+
+.product-image {
+  display: block;
+  width: 280px;
+  height: 180px;
+  margin: 0 auto;
+  object-fit: cover;           /* crops instead of squashing the image */
+}
+
+.product-stock {
+  margin: 0.5rem 0 0;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+/* Details column */
+.product-name {
+  margin: 0 0 0.5rem;
+  color: var(--color-purple);
+}
+
+.product-price {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+.product-description {
+  margin: 0;
+}
+
+.products-footer {
+  margin: 1.5rem 0 2rem;
+  text-align: center;
+}
+
+/* ---------- Narrow screens: stack image above details ---------- */
+@media (max-width: 640px) {
+  .products-table {
+    width: 100%;
+  }
+
+  .products-table,
+  .products-table tbody,
+  .products-table tr,
+  .products-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .products-table td {
+    border-bottom: 0;
+  }
+
+  .products-table tr {
+    border-bottom: 1px solid var(--color-purple);
+  }
+}

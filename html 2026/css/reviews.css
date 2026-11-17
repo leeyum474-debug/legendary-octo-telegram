@@ -1,0 +1,57 @@
+/* =====================================================================
+   REVIEWS PAGE (reviews.html)
+   ===================================================================== */
+
+.reviews-image {
+  display: block;
+  width: 500px;
+  aspect-ratio: 2 / 1;
+  margin: 0 auto 1.5rem;
+  object-fit: cover;           /* crops instead of squashing the image */
+}
+
+.reviews-table {
+  width: 80%;
+  margin-bottom: 3rem;
+}
+
+/* Reviewer name + star rating column */
+.reviewer {
+  width: 30%;
+  text-align: center;
+  font-weight: normal;
+}
+
+.reviewer-name {
+  display: block;
+  font-weight: bold;
+}
+
+.reviewer-rating {
+  font-size: 0.875rem;
+}
+
+/* ---------- Narrow screens: stack name above review ---------- */
+@media (max-width: 640px) {
+  .reviews-table {
+    width: 100%;
+  }
+
+  .reviews-table,
+  .reviews-table tbody,
+  .reviews-table tr,
+  .reviews-table th,
+  .reviews-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .reviews-table th,
+  .reviews-table td {
+    border-bottom: 0;
+  }
+
+  .reviews-table tr {
+    border-bottom: 1px solid var(--color-purple);
+  }
+}

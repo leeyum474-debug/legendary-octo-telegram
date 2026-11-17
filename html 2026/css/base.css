@@ -1,0 +1,146 @@
+/* =====================================================================
+   BASE STYLES - shared by every page of Cosmos Collectives
+   Load order on each page: components/*.css -> base.css -> <page>.css
+   ===================================================================== */
+
+/* ---------- Design tokens (colour scheme) ---------- */
+:root {
+  --color-bg: #0b0d17;
+  --color-text: #e0e6ed;
+  --color-purple: #7D21BF;
+  --color-panel: #121629;
+  --color-divider: #4a5482;
+  --color-black: #000000;
+
+  --font-main: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- Reset / page defaults ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 8px;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  line-height: 1.5;
+  overflow-x: hidden;          /* nav-button glow canvases extend past the viewport edge */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--color-purple);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-main);
+}
+
+/* Purple headings used throughout the site */
+.heading-purple {
+  color: var(--color-purple);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Intro paragraph under each page banner */
+.page-intro {
+  max-width: 700px;
+  margin: 1.5rem auto;
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.purple-text {
+  color: var(--color-purple);
+}
+
+.divider {
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 2px solid var(--color-divider);
+}
+
+/* ---------- Navigation bar ---------- */
+.main-nav {
+  margin: 0 -8px;              /* span the full width despite body padding */
+  padding: 15px;
+  background-color: var(--color-black);
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-list a {
+  font-weight: bold;
+}
+
+/* ---------- Animated page banner (PrismaticBurst + gradient title) ---------- */
+.hero-wrapper {
+  position: relative;
+  margin: 0 -8px;              /* full-bleed, matches the nav bar */
+}
+
+.hero-burst {
+  height: 260px;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  pointer-events: none;        /* clicks pass through to the burst */
+}
+
+.page-title {
+  margin: 0;
+  font-weight: bold;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  text-align: center;
+}
+
+/* ---------- Data tables (products, reviews) ---------- */
+.data-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: var(--color-panel);
+}
+
+.data-table th,
+.data-table td {
+  padding: 15px;
+  border: 1px solid var(--color-purple);
+}
+
+/* ---------- Narrow screens ---------- */
+@media (max-width: 640px) {
+  .hero-burst {
+    height: 200px;
+  }
+}

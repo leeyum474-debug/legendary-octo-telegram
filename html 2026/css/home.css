@@ -1,0 +1,91 @@
+/* =====================================================================
+   HOMEPAGE (index.html)
+   ===================================================================== */
+
+/* ---------- Banner (taller than the inner pages) ---------- */
+.hero-burst {
+  height: 600px;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 8vw, 6rem);
+}
+
+.hero-tagline {
+  margin: 0.5em 0 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* ---------- Intro ---------- */
+.store-heading {
+  margin: 1.5rem 0 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* ---------- Astronaut photos: two cards side by side ---------- */
+.astronaut-gallery {
+  display: flex;
+  flex-wrap: wrap;             /* stacks on narrow screens */
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  max-width: 1240px;
+  margin: 2rem auto;
+}
+
+.astronaut {
+  flex: 1 1 320px;
+  max-width: 600px;
+  margin: 0;
+  padding: 10px;
+}
+
+.astronaut figcaption {
+  margin-top: 0.75rem;
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+/* Label sits on top of the photo */
+.photo-wrapper {
+  position: relative;
+}
+
+.photo-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+}
+
+.astronaut img {
+  display: block;
+  width: 100%;
+  border: 3px solid var(--color-purple);
+  border-radius: 15px;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.astronaut img:hover {
+  opacity: 1;
+}
+
+/* ---------- "Why shop with us" ---------- */
+.why-us {
+  text-align: center;
+}
+
+.why-us h2 {
+  font-size: 2rem;
+}
+
+.perks-list {
+  display: inline-block;
+  text-align: left;
+}

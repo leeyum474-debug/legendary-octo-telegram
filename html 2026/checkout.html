@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Place your Cosmos Collectives order.">
+  <title>Checkout - Cosmos Collectives</title>
+
+  <!-- Animated components -->
+  <link rel="stylesheet" href="css/components/star-border.css">
+  <link rel="stylesheet" href="css/components/prismatic-burst.css">
+  <link rel="stylesheet" href="css/components/gradient-text.css">
+
+  <!-- Site styles -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/checkout.css">
+
+  <script src="js/components/star-border.js" defer></script>
+  <script src="js/components/prismatic-burst.js" defer></script>
+  <script src="js/components/gradient-text.js" defer></script>
+</head>
+<body>
+    <nav class="main-nav" aria-label="Main">
+      <ul class="nav-list">
+        <li>
+          <a href="index.html" class="star-border"
+             data-star-border
+             data-color="#a855f7"
+             data-trail-color="#7D21BF"
+             data-background-color="#000000"
+             data-text-color="#7D21BF"
+             data-border-color="rgba(125, 33, 191, 0.45)"
+             data-duration="4"
+             data-radius="12"
+             data-hover="lap">Home</a>
+        </li>
+        <li>
+          <a href="products.html" class="star-border"
+             data-star-border
+             data-color="#a855f7"
+             data-trail-color="#7D21BF"
+             data-background-color="#000000"
+             data-text-color="#7D21BF"
+             data-border-color="rgba(125, 33, 191, 0.45)"
+             data-duration="4"
+             data-radius="12"
+             data-hover="lap">Products</a>
+        </li>
+        <li>
+          <a href="about.html" class="star-border"
+             data-star-border
+             data-color="#a855f7"
+             data-trail-color="#7D21BF"
+             data-background-color="#000000"
+             data-text-color="#7D21BF"
+             data-border-color="rgba(125, 33, 191, 0.45)"
+             data-duration="4"
+             data-radius="12"
+             data-hover="lap">About &amp; Contact</a>
+        </li>
+        <li>
+          <a href="reviews.html" class="star-border"
+             data-star-border
+             data-color="#a855f7"
+             data-trail-color="#7D21BF"
+             data-background-color="#000000"
+             data-text-color="#7D21BF"
+             data-border-color="rgba(125, 33, 191, 0.45)"
+             data-duration="4"
+             data-radius="12"
+             data-hover="lap">Reviews</a>
+        </li>
+        <li>
+          <a href="faq.html" class="star-border"
+             data-star-border
+             data-color="#a855f7"
+             data-trail-color="#7D21BF"
+             data-background-color="#000000"
+             data-text-color="#7D21BF"
+             data-border-color="rgba(125, 33, 191, 0.45)"
+             data-duration="4"
+             data-radius="12"
+             data-hover="lap">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="hero-wrapper">
+      <div class="prismatic-burst-container hero-burst" data-prismatic-burst data-colors="#A855F7,#7C3AED,#6366F1" data-animation-type="rotate3d" data-intensity="2" data-speed="0.5" data-fade="0.3" aria-hidden="true"></div>
+      <div class="hero-overlay">
+        <h1 class="page-title"><span data-gradient-text data-colors="#A855F7,#FF9FFC,#6366F1" data-variant="flow" data-animation-speed="8" data-glow="0.4">Product Checkout</span></h1>
+      </div>
+    </header>
+
+    <main>
+      <p class="page-intro">
+        Enter in your details below to place your order!
+      </p>
+
+      <hr class="divider">
+
+      <form class="order-form" action="#" method="post">
+        <label for="customer-name">Enter your name:</label>
+        <input class="form-input" type="text" id="customer-name" name="name" placeholder="eg. Mr Nagra" required>
+
+        <label for="coordinates">Enter your Coordinates:</label>
+        <input class="form-input" type="text" id="coordinates" name="coordinates" placeholder="eg. 38°53′52″N 77°02′11″W" required>
+
+        <label for="product-name">Enter Product Name:</label>
+        <input class="form-input" type="text" id="product-name" name="product" placeholder="eg. Supernova" required>
+
+        <label for="quantity">Enter Quantity:</label>
+        <input class="form-input" type="number" id="quantity" name="quantity" min="1" placeholder="eg. 2" required>
+
+        <div class="order-actions">
+          <button class="order-button" type="submit">Place Order</button>
+        </div>
+      </form>
+    </main>
+</body>
+</html>

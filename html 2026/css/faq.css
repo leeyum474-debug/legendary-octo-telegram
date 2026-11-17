@@ -1,0 +1,35 @@
+/* =====================================================================
+   FAQ PAGE (faq.html)
+   ===================================================================== */
+
+.faq-image {
+  display: block;
+  width: 500px;
+  aspect-ratio: 2 / 1;
+  margin: 0 auto 1.5rem;
+  object-fit: cover;           /* crops instead of squashing the image */
+}
+
+.faq-section {
+  text-align: center;
+}
+
+.faq-section h2 {
+  color: var(--color-purple);
+}
+
+.faq-list {
+  display: inline-block;
+  max-width: 800px;
+  margin: 0;
+  padding-left: 1.5rem;
+  text-align: left;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+}
+
+.page-end {
+  margin-top: 3rem;
+}
