@@ -1,0 +1,69 @@
+/* =====================================================================
+   ABOUT & CONTACT PAGE (About and contact page.html)
+   Cosmos Collectives - external stylesheet for this page only.
+   ===================================================================== */
+
+/* Page background and text colours (replaces the old <body> colour attributes) */
+body {
+  background-color: #0b0d17;
+  color: #e0e6ed;
+}
+a { color: #7D21BF; }
+
+.nav-list a { font-weight: bold; }
+
+.main-nav {
+  background-color: #000000;
+  border: 1px solid #000000;
+  padding: 15px;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.page-title {
+  font-family: Arial, sans-serif;
+}
+
+.map-frame {
+  border: 1px solid #7D21BF;
+}
+
+.purple-text {
+  color: #7D21BF;
+}
+
+/* ---------- ANIMATED HEADER (same PrismaticBurst as the homepage) ---------- */
+.hero-wrapper {
+  position: relative;
+}
+
+.hero-burst {
+  height: 260px;           /* shorter than the homepage's 600px banner */
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  pointer-events: none;    /* clicks pass through to the burst */
+}
+
+.page-title {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+}
